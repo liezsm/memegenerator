@@ -1,19 +1,28 @@
 .App {
   text-align: center;
+  height: 100vh;
 }
 
 header,
 footer {
-  background-color: #282c34;
   color: #fff;
   height: clamp(4.375rem, calc(4.375rem + 1vw), 7.5rem);
   width: 100%;
 }
-header {
+header,
+footer {
   display: flex;
   justify-content: center;
   align-items: center;
 }
+
+footer {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
 .meme_img {
   width: clamp(50px, calc(50px + 0.5rem), 10%);
   margin-right: 2rem;
@@ -23,6 +32,37 @@ header {
   /* border: 2px solid red; */
   font-size: 2rem;
   background: linear-gradient(to left, blue, red, violet);
+  color: transparent;
+  background-clip: text;
+}
+
+.meme_container {
+  margin: 2rem 0;
+}
+
+.meme_container_btn {
+  width: 250px;
+  padding: 1rem 1.2rem;
+  border: none;
+  outline: none;
+  border-radius: 50px;
+  background: #282c34;
+  box-shadow: inset 38px 38px 76px #22252c, inset -38px -38px 76px #2e333c;
+  transition: all 300ms ease-in-out;
+}
+
+.meme_container_btn:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+  border-radius: 50px;
+  background: #282c34;
+  box-shadow: 38px 38px 76px #22252c, -38px -38px 76px #2e333c;
+}
+
+.meme_container_btn span {
+  text-transform: uppercase;
+  font-size: 1.5rem;
+  background: linear-gradient(to right, blue, red, violet);
   color: transparent;
   background-clip: text;
 }
