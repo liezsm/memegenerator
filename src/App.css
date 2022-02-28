@@ -2,37 +2,27 @@
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
+header,
+footer {
   background-color: #282c34;
-  min-height: 100vh;
+  color: #fff;
+  height: clamp(4.375rem, calc(4.375rem + 1vw), 7.5rem);
+  width: 100%;
+}
+header {
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+}
+.meme_img {
+  width: clamp(50px, calc(50px + 0.5rem), 10%);
+  margin-right: 2rem;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.meme_title {
+  /* border: 2px solid red; */
+  font-size: 2rem;
+  background: linear-gradient(to left, blue, red, violet);
+  color: transparent;
+  background-clip: text;
 }
