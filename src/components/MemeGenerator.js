@@ -50,10 +50,12 @@ loadData()
                 <button className='meme_container_btn'
                 onClick={this.handleClick}>
                     <span>Generate meme</span></button>
-                <div className="meme__result" style={{border: "2px solid red"}}>
-                <h1>{this.state.random.name}</h1>
-                <img src={this.state.random.url} alt="random meme" />
+             {this.state.random &&     
+                <div className="meme__result" >
+                {/* <h1>{this.state.random.name}</h1> */}
+                <img src={this.state.random.url} alt="random meme"  />
                 </div>
+                 }
             </div>
         )
     }

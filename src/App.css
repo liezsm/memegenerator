@@ -16,13 +16,6 @@ footer {
   align-items: center;
 }
 
-footer {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  right: 0;
-}
-
 .meme_img {
   width: clamp(50px, calc(50px + 0.5rem), 10%);
   margin-right: 2rem;
@@ -38,6 +31,10 @@ footer {
 
 .meme_container {
   margin: 2rem 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  /* border: 2px solid red; */
 }
 
 .meme_container_btn {
@@ -65,4 +62,8 @@ footer {
   background: linear-gradient(to right, blue, red, violet);
   color: transparent;
   background-clip: text;
+}
+
+.meme__result {
+  max-width: 50vw;
 }
